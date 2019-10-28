@@ -51,10 +51,10 @@
 		
 		
 		</li>
-		<li>휴대폰 : <%=phone %> </li>
-		<li>주소 : <%=address %> </li>
-		<li>취미 : <%=hobby %> </li>
-
+		<li>휴대폰 : <%=phone%> </li>
+		<li>주소 : <%=address%> </li>
+		<li>취미 : <%=hobby%> </li>
+</ul>
 
 </body>
 </html>
