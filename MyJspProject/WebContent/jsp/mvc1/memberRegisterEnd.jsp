@@ -9,7 +9,7 @@
 	String userId = request.getParameter("userId");
  	String userPwd = request.getParameter("userPwd");
  	String userName = request.getParameter("userName");
- 	int age = Integer.parseInt(request.getParameter("age"));
+ 	int age = Integer.parseInt(request.getParameter("userAge"));
  	String gender =	request.getParameter("gender");
  	String email = request.getParameter("email");
  	String phone = request.getParameter("phone");
