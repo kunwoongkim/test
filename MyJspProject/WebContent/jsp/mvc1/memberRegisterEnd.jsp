@@ -75,7 +75,7 @@
 		<li>취미 : <%=hobby%> </li>
 </ul>
 	<hr>
-	<p><%=msg %></p>
+	<p><%=msg%></p>
 
 </body>
 </html>
