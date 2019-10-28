@@ -99,7 +99,28 @@ $("#food").append("<img src='<%= request.getContextPath()%>/images/palbc.png'/>"
 
 </script>
 <style type="text/css">
-
+	#container{
+		width : 600px;
+		min-height : 500px;
+		margin : 0px auto;
+		padding : 10px;
+	}
+	#header{
+		float : left;
+		width : 600px;
+		height : 600px;
+		text-align : center;
+		padding-bottom : 50px;
+	}
+	#color{
+	
+		position : relative;
+		float : left;
+		width : 388px;
+		height : 150px;
+		padding-right : 10px;
+		
+	}
 
 </style>
 </head>
