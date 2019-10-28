@@ -39,7 +39,7 @@
 		<li>아이디 : <%=userId %> </li>
 		<li>패스워드 : <%=userPwd %> </li>
 		<li>이름 : <%=userName %> </li>
-		<li>나이 : <%=age %> </li>
+		<li>나이 : <%=age %> 세</li>
 		<li>이메일 : <%=email %> </li>
 		<li>성별 : 
 			<span id = "gender" style="font-weight:bold;color:<%String genderColor=""; 
@@ -47,7 +47,7 @@
 			genderColor="blue";
 		}else{
 			genderColor="red";
-		}%><%=genderColor%><%=gender%>"></span>
+		}%><%=genderColor%>"><%=gender%></span>
 		
 		
 		</li>
