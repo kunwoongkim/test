@@ -40,110 +40,62 @@ $(document).ready(function(){
 	$("#color").append("<img src='<%= request.getContextPath()%>/images/yellow.png'/>");
 	<%
 		break;
-<<<<<<< HEAD
+
+		};
+		%>
+		
+		<%
+		switch(animal){
+		case "강아지" : 
+		
+	%>
+		$("#animal").append("<img src='<%= request.getContextPath()%>/images/dog.png'/>");
+		
+	<% break;
+		case "고양이":
+	%>
+		$("#animal").append("<img src='<%= request.getContextPath()%>/images/cat.png'/>");
+	<%
+		break;
+		case "금붕어":
+	%>
+	$("#animal").append("<img src='<%= request.getContextPath()%>/images/fish.png'/>");
+	<%
+		break;
 	};
 	%>
-	
+
 	<%
-	switch(animal){
-	case "강아지" : 
-	
-%>
-	$("#animal").append("<img src='<%= request.getContextPath()%>/images/dog.png'/>");
-	
-<% break;
-	case "고양이":
-%>
-	$("#animal").append("<img src='<%= request.getContextPath()%>/images/cat.png'/>");
-<%
-	break;
-	case "금붕어":
-%>
-$("#animal").append("<img src='<%= request.getContextPath()%>/images/fish.png'/>");
-<%
-	break;
-};
-%>
-
-<%
-	for(int i=0;i<foodArr.length;i++)
-	{
-		switch(foodArr[i]){
-		case "짜장면":
-%>
-	$("#food").append("<img src='<%= request.getContextPath()%>/images/jjm.png'/>");
-<% break;
-		case "짬뽕":
-%>
-$("#food").append("<img src='<%= request.getContextPath()%>/images/jjbong.png'/>");
-<% break;
-case "탕수육": 
-%>
-$("#food").append("<img src='<%= request.getContextPath()%>/images/tangsy.png'/>");	
+		for(int i=0;i<foodArr.length;i++)
+		{
+			switch(foodArr[i]){
+			case "짜장면":
+	%>
+		$("#food").append("<img src='<%= request.getContextPath()%>/images/jjm.png'/>");
 	<% break;
-case "양장피": 
-%>
-$("#food").append("<img src='<%= request.getContextPath()%>/images/yang.png'/>");
-	
-<% break;
-case	"팔보채": 
-%>
-$("#food").append("<img src='<%= request.getContextPath()%>/images/palbc.png'/>");
+			case "짬뽕":
+	%>
+	$("#food").append("<img src='<%= request.getContextPath()%>/images/jjbong.png'/>");
+	<% break;
+	case "탕수육": 
+	%>
+	$("#food").append("<img src='<%= request.getContextPath()%>/images/tangsy.png'/>");	
+		<% break;
+	case "양장피": 
+	%>
+	$("#food").append("<img src='<%= request.getContextPath()%>/images/yang.png'/>");
+		
+	<% break;
+	case	"팔보채": 
+	%>
+	$("#food").append("<img src='<%= request.getContextPath()%>/images/palbc.png'/>");
 
-<% break;
-}}
- 
-%>
-});
-</script>
-<style type="text/css">
-	#container{
-		width : 600px;
-		min-height : 500px;
-		margin : 0px auto;
-		padding : 10px;
-	}
-	#header{
-		float : left;
-		width : 600px;
-		height : 600px;
-		text-align : center;
-		padding-bottom : 50px;
-	}
-	#color{
-	
-		position : relative;
-		float : left;
-		width : 388px;
-		height : 150px;
-		padding-right : 10px;
-		
-	}
-	#animal{
-	
-		position : relative;
-		float : left;
-		width : 388px;
-		height : 150px;
-		padding-right : 10px;
-		
-	}
-	#food{
-		position : relative;
-		clear : both;
-		padding-left :10px;
-		
-	}
-	
-	#food img{
-		width : 153px;
-		height : 114px;
-		padding-right: 10px;
-	
-	}
+	<% break;
+	}}
+	 
+	%>
+	});
 
-</style>
-=======
 	}
 	%>
 	
