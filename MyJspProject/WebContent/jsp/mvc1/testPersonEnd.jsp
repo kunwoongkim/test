@@ -40,7 +40,7 @@ $(document).ready(function(){
 	$("#color").append("<img src='<%= request.getContextPath()%>/images/yellow.png'/>");
 	<%
 		break;
-	}
+	};
 	%>
 	
 	<%
@@ -61,7 +61,7 @@ $(document).ready(function(){
 $("#animal").append("<img src='<%= request.getContextPath()%>/images/fish.png'/>");
 <%
 	break;
-}
+};
 %>
 
 <%
@@ -75,28 +75,25 @@ $("#animal").append("<img src='<%= request.getContextPath()%>/images/fish.png'/>
 		case "짬뽕":
 %>
 $("#food").append("<img src='<%= request.getContextPath()%>/images/jjbong.png'/>");
-});	
 <% break;
 case "탕수육": 
 %>
-$("#food").append("<img src='<%= request.getContextPath()%>/images/tangsy.png'/>");
-	});	
+$("#food").append("<img src='<%= request.getContextPath()%>/images/tangsy.png'/>");	
 	<% break;
 case "양장피": 
 %>
 $("#food").append("<img src='<%= request.getContextPath()%>/images/yang.png'/>");
-	});
+	
 <% break;
 case	"팔보채": 
 %>
 $("#food").append("<img src='<%= request.getContextPath()%>/images/palbc.png'/>");
-	});	
+
 <% break;
-};
-};
+}}
  
 %>
-
+});
 </script>
 <style type="text/css">
 	#container{
