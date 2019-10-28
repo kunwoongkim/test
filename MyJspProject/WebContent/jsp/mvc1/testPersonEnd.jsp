@@ -121,6 +121,16 @@ $("#food").append("<img src='<%= request.getContextPath()%>/images/palbc.png'/>"
 		padding-right : 10px;
 		
 	}
+	#animal{
+	
+		position : relative;
+		float : left;
+		width : 388px;
+		height : 150px;
+		padding-right : 10px;
+		
+	}
+	
 
 </style>
 </head>
