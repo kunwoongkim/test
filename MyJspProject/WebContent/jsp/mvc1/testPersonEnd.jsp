@@ -40,6 +40,7 @@ $(document).ready(function(){
 	$("#color").append("<img src='<%= request.getContextPath()%>/images/yellow.png'/>");
 	<%
 		break;
+<<<<<<< HEAD
 	};
 	%>
 	
@@ -142,6 +143,67 @@ $("#food").append("<img src='<%= request.getContextPath()%>/images/palbc.png'/>"
 	}
 
 </style>
+=======
+	}
+	%>
+	
+	<%
+	switch(animal){
+	case "강아지" : 
+	
+%>
+	$("#animal").append("<img src='<%= request.getContextPath()%>/images/dog.png'/>");
+	
+<% break;
+	case "고양이":
+%>
+	$("#animal").append("<img src='<%= request.getContextPath()%>/images/cat.png'/>");
+<%
+	break;
+	case "금붕어":
+%>
+$("#animal").append("<img src='<%= request.getContextPath()%>/images/fish.png'/>");
+<%
+	break;
+}
+%>
+
+<%
+	for(int i=0;i<foodArr.length;i++)
+	{
+		switch(foodArr[i]){
+		case "짜장면":
+%>
+	$("#food").append("<img src='<%= request.getContextPath()%>/images/jjm.png'/>");
+<% break;
+		case "짬뽕":
+%>
+$("#food").append("<img src='<%= request.getContextPath()%>/images/jjbong.png'/>");
+});	
+<% break;
+case "탕수육": 
+%>
+$("#food").append("<img src='<%= request.getContextPath()%>/images/tangsy.png'/>");
+	});	
+	<% break;
+case "양장피": 
+%>
+$("#food").append("<img src='<%= request.getContextPath()%>/images/yang.png'/>");
+	});
+<% break;
+case	"팔보채": 
+%>
+$("#food").append("<img src='<%= request.getContextPath()%>/images/palbc.png'/>");
+	});	
+<% break;
+};
+};
+ 
+%>
+
+</script>
+
+>>>>>>> branch 'master' of https://github.com/kunwoongkim/test.git
 </head>
 <body>
 	<div id="container">
