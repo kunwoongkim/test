@@ -130,7 +130,19 @@ $("#food").append("<img src='<%= request.getContextPath()%>/images/palbc.png'/>"
 		padding-right : 10px;
 		
 	}
+	#food{
+		position : relative;
+		clear : both;
+		padding-left :10px;
+		
+	}
 	
+	#food img{
+		width : 153px;
+		height : 114px;
+		padding-right: 10px;
+	
+	}
 
 </style>
 </head>
