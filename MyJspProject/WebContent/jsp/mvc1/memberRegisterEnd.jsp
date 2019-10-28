@@ -16,6 +16,25 @@
  	String address = request.getParameter("address");
  	String [] hobbies =request.getParameterValues("hobby");
  	String hobby = String.join(",",hobbies);
+ 	
+ 	Connection conn =null;
+ 	PreparedStatement pstmt =null;
+ 	String query = "insert into member values(?,?,?,?,?,?,?,?,?,sysdate)";
+ 	
+ 	Class.forName("oracle.jdbc.driver.OracleDriver");
+ 	conn=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe","student","student");
+ 	pstmt= conn.prepareStatement(query);
+ 	pstmt.setString(1, userId);
+ 	pstmt.setString(2, userPwd);
+ 	pstmt.setString(3, userName);
+ 	pstmt.setString(4, gender);
+ 	pstmt.setInt(5, age);
+ 	pstmt.setString(6, email);
+ 	pstmt.setString(7, phone);
+ 	pstmt.setString(8, address);
+ 	pstmt.setString(9, hobby);
+ 	int result = pstmt.executeUpdate();
+ 	String msg =  result > 0 ? "성공적으로 회원가입되었습니다":"회원가입에 실패했습니다";
  %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
@@ -55,6 +74,8 @@
 		<li>주소 : <%=address%> </li>
 		<li>취미 : <%=hobby%> </li>
 </ul>
+	<hr>
+	<p><%=msg %></p>
 
 </body>
 </html>
